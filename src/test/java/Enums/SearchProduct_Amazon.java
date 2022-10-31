@@ -1,7 +1,7 @@
 package Enums;
 
 public enum SearchProduct_Amazon {
-    SearchProduct ("OnePlus Nord CE 2 5G (Bahamas Blue, 8GB RAM, 128GB Storage)"),
+    SearchProduct ("OnePlus 10T 5G (Moonstone Black, 16GB RAM, 256GB Storage)"),
     product_quantity ( "4");
 
     private String name;

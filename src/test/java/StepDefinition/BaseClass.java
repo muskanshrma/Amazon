@@ -40,6 +40,6 @@ public class BaseClass {
         driver.get(prop.getProperty("url"));
     }
     public void close() {
-        driver.close();
+        driver.quit();
     }
 }

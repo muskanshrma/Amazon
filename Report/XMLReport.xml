@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.786">
+    <testcase classname="AddProductFromWishlistToCart" name="Search for a product and Add it to cart" time="27.538">
+        <system-out><![CDATA[Given User is on Homepage...................................................passed
+When User search for product................................................passed
+And User clicks on product and add product to cart..........................passed
+Then Product is added to cart successfully..................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

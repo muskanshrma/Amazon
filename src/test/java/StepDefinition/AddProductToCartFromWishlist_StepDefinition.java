@@ -3,8 +3,6 @@ package StepDefinition;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import static StepDefinition.BaseClass.driver;
 
 public class AddProductToCartFromWishlist_StepDefinition extends BaseClass{
     @Given("User is on Homepage")
@@ -22,7 +20,8 @@ public class AddProductToCartFromWishlist_StepDefinition extends BaseClass{
     }
 
     @Then("Product is added to cart successfully")
-    public void add_product_to_cart_verification() {
+    public void add_product_to_cart_verification() throws InterruptedException {
         pageFactory.getAddProductToCartFromWishlist().addProductToCartVerification();
+        close();
     }
 }
