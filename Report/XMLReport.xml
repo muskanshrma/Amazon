@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.786">
-    <testcase classname="AddProductFromWishlistToCart" name="Search for a product and Add it to cart" time="27.538">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="54.404">
+    <testcase classname="Add product to cart and change quantity" name="Search for a product and Add it to cart" time="21.444">
         <system-out><![CDATA[Given User is on Homepage...................................................passed
 When User search for product................................................passed
-And User clicks on product and add product to cart..........................passed
+And User clicks on product..................................................passed
+And User adds product to cart...............................................passed
 Then Product is added to cart successfully..................................passed
+And User increases the quantity.............................................passed
 ]]></system-out>
+    </testcase>
+    <testcase classname="Add product to cart and change quantity" name="Search for a product and Add it to cart 2" time="32.692">
+        <failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[Given User is on Homepage...................................................passed
+When User search for product................................................passed
+And User clicks on product..................................................passed
+And User adds product to cart...............................................passed
+Then Product is added to cart successfully..................................passed
+And User clicks on proceed to buy button....................................passed
+And User enters account details.............................................failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.base/java.util.Collections$SingletonList.get(Collections.java:4959)
+	at StepDefinition.AddProductToCartFromWishlist_StepDefinition.user_enters_account_details(AddProductToCartFromWishlist_StepDefinition.java:122)
+	at ✽.User enters account details(file:///C:/Users/MuskanSharma/IdeaProjects/Amazon/src/test/java/FeatureFiles/AddProductFromWishlistToCart.feature:16)
+]]></failure>
     </testcase>
 </testsuite>
